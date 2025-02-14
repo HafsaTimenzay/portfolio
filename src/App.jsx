@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./App.css";
 import ProfileCard from './profile_card/index.jsx'
+import MainPage from './main_page/index.jsx'
 
 const App = () => {
   const canvasRef = useRef(null);
@@ -67,13 +68,11 @@ const App = () => {
 
       {/* Content on top of the background */}
       <div className="content">
-        <h1>Welcome to My Starry Background</h1>
-        <p>This is an example of adding content on top of the animated background.</p>
-
         <button className="toggle-btn" onClick={() => setDarkMode(!darkMode)}>
           {darkMode ? "Light Mode ☀️" : "Dark Mode 🌙"}
         </button>
         <ProfileCard />
+        <MainPage />
       </div>
       
     </div>
