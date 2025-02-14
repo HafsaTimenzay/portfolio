@@ -1,0 +1,46 @@
+
+/* background */
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative; /* Ensures child elements are positioned correctly */
+}
+
+.canvas {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Content that sits on top of the canvas */
+.content {
+  position: relative;
+  z-index: 2; /* Ensure it's above the canvas */
+  color: white;
+  text-align: center;
+  padding-top: 20vh;
+}
+
+/* Dark mode button */
+.toggle-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background: #444;
+  color: white;
+  transition: background 0.3s;
+}
+
+.toggle-btn:hover {
+  background: #666;
+}
+
+
