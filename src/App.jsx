@@ -68,11 +68,12 @@ const App = () => {
 
       {/* Content on top of the background */}
       <div className="content">
+        
+        <ProfileCard />
+        <MainPage />
         <button className="toggle-btn" onClick={() => setDarkMode(!darkMode)}>
           {darkMode ? "Light Mode ☀️" : "Dark Mode 🌙"}
         </button>
-        <ProfileCard />
-        <MainPage />
       </div>
       
     </div>
