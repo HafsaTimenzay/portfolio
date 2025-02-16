@@ -1,7 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./App.css";
-import ProfileCard from './profile_card/index.jsx'
-import MainPage from './main_page/index.jsx'
+import ProfileCard from './profile.jsx'
+import MainPage from './content.jsx'
+import Navbar from './navbar.jsx'
 
 const App = () => {
   const canvasRef = useRef(null);
@@ -62,18 +63,15 @@ const App = () => {
   }, []);
 
   return (
-    <div className="wrapper" style={{ background: darkMode ? "black" : "white" }}>
+    <div className="wrapper">
       
       <canvas ref={canvasRef} className="canvas" />
 
       {/* Content on top of the background */}
       <div className="content">
-        
         <ProfileCard />
+        <Navbar />
         <MainPage />
-        <button className="toggle-btn" onClick={() => setDarkMode(!darkMode)}>
-          {darkMode ? "Light Mode ☀️" : "Dark Mode 🌙"}
-        </button>
       </div>
       
     </div>

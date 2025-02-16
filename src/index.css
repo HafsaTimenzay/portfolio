@@ -1,16 +1,33 @@
+*{
+  padding: 0;
+  font-family: "Syne", sans-serif;
+  margin: 0;
+}
+/* Default (Light Mode) */
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  --bg-color: #e6ebf4;
+  --text-color: #000000;
+  --card-bg: #ebf0f7;
+  --card-border:#c6c6c6;
+  --primary-color: #CEC4EF;
+  --second-color: #E4B8BF;
+}
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+/* Dark Mode */
+[data-theme="dark"] {
+  --bg-color: #111111;
+  --text-color: #ffffff;
+  --card-bg: #161616;
+  --card-border:#535353;
+  --primary-color: #7059e2;
+  --second-color: #aa70e0;
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.btn-primary{
+  background: linear-gradient(to right,var(--primary-color), var(--second-color));
+  border: none !important;
+  padding: 0.8rem 3rem !important;
+  border-radius: 30px !important;
 }
 
 a {
