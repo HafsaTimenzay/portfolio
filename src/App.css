@@ -57,14 +57,20 @@
   width: 400px;
 }
 
-.name{
-  font-size: 36px;
-}
+
 
 .profile-img img{
   border-radius: 20px;
   width: 19rem;
 }
+
+.profile-img img {
+  transition: filter 0.3s ease-in-out;
+}
+
+/* [data-theme="dark"] .profile-img img {
+  filter: brightness(0.8);
+} */
 
 .media-icon{
   color: var(--text-color);
@@ -81,15 +87,20 @@
 
 
 /* Navbar */
+
 /* Dark Mode */
-/* body.dark-mode {
+body.dark-mode {
   color: var(--text-color);
-} */
+}
 
 /* Navbar */
 .custom-navbar {
-  /* background: var(--bg-color); */
   padding: 15px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  
 }
 
 /* Center Links */

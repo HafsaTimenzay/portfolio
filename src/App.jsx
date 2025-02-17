@@ -64,16 +64,22 @@ const App = () => {
 
   return (
     <div className="wrapper">
-      
+
       <canvas ref={canvasRef} className="canvas" />
 
       {/* Content on top of the background */}
-      <div className="content">
-        <ProfileCard />
-        <Navbar />
-        <MainPage />
+      <div className="row content">
+        <div className="col-lg-4">
+          <ProfileCard />
+
+        </div>
+        <div className="col-lg-8 pt-5 mt-5">
+          <Navbar />
+          <MainPage />
+        </div>
+
       </div>
-      
+
     </div>
   );
 };
