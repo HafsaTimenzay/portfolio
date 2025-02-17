@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./App.css";
+import "@fontsource/syne"; // Defaults to 400 weight
 import ProfileCard from './profile.jsx'
 import MainPage from './content.jsx'
 import Navbar from './navbar.jsx'
@@ -73,7 +74,7 @@ const App = () => {
           <ProfileCard />
 
         </div>
-        <div className="col-lg-8 pt-5 mt-5">
+        <div className="col-lg-8 mt-5 ms-0 ps-0">
           <Navbar />
           <MainPage />
         </div>

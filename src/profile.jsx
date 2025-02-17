@@ -17,20 +17,18 @@ const ProfileCard = () => {
   }, [theme]); // Déclenche un changement quand le theme est modifié  console.log(theme)
 
   return (
-    <div className="profile_card d-flex flex-column gap-1 align-items-center pt-4">
+    <div className="profile-card d-flex flex-column gap-1 align-items-center pt-4">
       <div className="row logo pb-0 mb-0">
-        <div className="col-3">
-          <img src={logo} alt="logo" width={75} />
-        </div>
-        <div className="col-9">
-          <h2 >Hafsa Timenzay</h2>
+        <div className="col-3 d-flex flex-row gap-3 align-items-start ps-5">
+          <img src={logo} alt="logo" width={85} />
+          <p>Hafsa Timenzay</p>
         </div>
       </div>
-      <div className="profile-img pt-0 pb-4">
+      <div className="profile-img py-3 p">
         <img src={Profile} alt="" />
       </div>
-      <h3 className='text-bold pb-4'>Web & Mobile Developer</h3>
-      <div className="social-media d-flex justify-content-center gap-3 pb-4">
+      <h3 className='text-bold pb-3'>Web & Mobile Developer</h3>
+      <div className="social-media d-flex justify-content-center gap-3 pb-3">
         <a href="https://github.com/HafsaTimenzay" target="_blank" rel="noopener noreferrer">
           <i className="media-icon bi bi-github"></i>
         </a>

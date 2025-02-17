@@ -1,3 +1,7 @@
+
+body{
+  font-family: 'Syne', sans-serif;
+}
 /* background */
 .wrapper {
   background: var(--bg-color);
@@ -47,7 +51,7 @@
 
 /* Profile Card */
 
-.profile_card{
+.profile-card{
   background: var(--card-bg);
   border: var(--card-border) solid 1px;
   border-radius: 2rem;
@@ -57,20 +61,28 @@
   width: 400px;
 }
 
+.profile-card p{
+  font-weight: 900;
+  font-size: 28px;
 
+}
 
 .profile-img img{
   border-radius: 20px;
-  width: 19rem;
+  width: 18rem;
 }
 
 .profile-img img {
   transition: filter 0.3s ease-in-out;
 }
 
-/* [data-theme="dark"] .profile-img img {
+[data-theme="dark"] .profile-img img {
   filter: brightness(0.8);
-} */
+}
+
+.profile-card h3{
+  font-weight: 800;
+}
 
 .media-icon{
   color: var(--text-color);
@@ -81,8 +93,13 @@
 }
 
 .linkBtn{
-  position: absolute;
-  bottom: 30px;
+  position: relative;
+  top: 25px;
+  font-weight: 600 !important;
+  font-size: large !important;
+  padding: 1rem 4rem !important;
+  letter-spacing: 0.1rem !important;
+
 }
 
 
@@ -114,13 +131,19 @@ body.dark-mode {
   font-size: 18px;
   transition: color 0.3s;
 }
-
-.navbar-nav .nav-link:hover {
+.navbar-nav .nav-link:hover{
   color: var(--text-color);
+}
+.navbar-nav .nav-link:active {
+  color: var(--text-color) !important;
+  /* background: rgba(255, 255, 255, 0.1); */
+  border-radius: 30px !important;
+  border: solid 1px #aaa !important;
+
 }
 
 /* Active (Home) Button */
-.home-btn {
+.nav-link:active {
   padding: 8px 20px;
   border: 1px solid #aaa;
   border-radius: 50px;
@@ -129,9 +152,6 @@ body.dark-mode {
   transition: all 0.3s;
 }
 
-.home-btn:hover {
-  background: rgba(255, 255, 255, 0.1);
-}
 
 /* Dark Mode Toggle */
 .dark-mode-btn {
@@ -163,3 +183,10 @@ body.dark-mode {
 }
 
 
+/* content */
+/* Home */
+#home h1{
+  font-weight: 900;
+  font-size: 70px !important;
+  color: linear-gradient(90deg, var(--second-color), var(--primary-color));
+}

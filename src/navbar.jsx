@@ -9,24 +9,24 @@ const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <nav className="navbar navbar-expand-lg fixed-top custom-navbar">
+    <nav className="navbar navbar-expand custom-navbar pe-4">
       <div className="container d-flex justify-content-between align-items-center">
         {/* Navbar Links */}
-        <ul className="navbar-nav mx-auto">
+        <ul className="navbar-nav">
           <li className="nav-item">
-            <a className="nav-link active home-btn" href="#">Home</a>
+            <a className="nav-link px-4 py-3 active" href="#">Home</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Portfolio</a>
+            <a className="nav-link px-4 py-3" href="#">Portfolio</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">About Me</a>
+            <a className="nav-link px-4 py-3" href="#">About Me</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Resume</a>
+            <a className="nav-link px-4 py-3" href="#">Resume</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Contact</a>
+            <a className="nav-link px-4 py-3" href="#">Contact</a>
           </li>
         </ul>
 
